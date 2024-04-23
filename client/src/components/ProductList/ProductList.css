@@ -1,0 +1,85 @@
+.products_list {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.product {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  width: 250px;
+  height: 400px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.product:hover {
+  box-shadow: 5px 5px 15px 5px #ddd;
+  transform: translateX(1px);
+  transition: 0.2s ease;
+}
+
+.wish_btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #ddd;
+}
+.product .wish_btn svg {
+  font-size: 30px;
+}
+
+.product img {
+  width: 200px;
+  margin-top: 20px;
+}
+
+.product h2,
+.product p {
+  margin-right: auto;
+}
+
+.product h2 {
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.product_info {
+  margin: 10px;
+  text-wrap: wrap;
+}
+
+.product_price {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 18px;
+  color: #1f6c98;
+  font-weight: 600;
+}
+
+.basket_btn {
+  margin-top: 15px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  background-color: #ee8f10;
+  color: #fff;
+}
+
+.basket_btn:hover {
+  background-color: black;
+  transition: 0.5s ease;
+}

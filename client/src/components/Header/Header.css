@@ -1,0 +1,107 @@
+.header {
+  background-color: #1f6c98;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header_logo {
+  height: 50px;
+  margin-left: 4rem;
+}
+
+.header_logo img {
+  height: 50px;
+  cursor: pointer;
+}
+
+.header_search {
+  position: relative;
+}
+
+.header_search > input {
+  width: 50vw;
+  border: 1px solid #4ea0cf;
+  border-radius: 20px;
+  height: 40px;
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: 100;
+  font-style: italic;
+  color: white;
+  padding-left: 1rem;
+  outline: none;
+}
+
+.header_search > input::placeholder {
+  font-style: italic;
+  color: white;
+  font-size: 1rem;
+  font-weight: 100 !important;
+  letter-spacing: 0.065em;
+}
+
+.header_search > input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
+  font-style: italic;
+}
+
+.header_search > input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white;
+  font-style: italic;
+}
+
+.header_searchIcon {
+  position: absolute;
+  right: 10px;
+  top: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.header_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20vw;
+  padding-right: 4rem;
+  color: white;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  /* font-weight: 100 !important; */
+}
+
+.header_content span {
+  cursor: pointer;
+}
+
+.header_content svg {
+  cursor: pointer;
+  font-size: 26px;
+}
+
+.header_basket {
+  position: relative;
+}
+
+.basket_quantity {
+  position: absolute;
+  top: 19px;
+  right: 52px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  width: 23px;
+  height: 20px;
+  text-align: center;
+  line-height: 1;
+}
